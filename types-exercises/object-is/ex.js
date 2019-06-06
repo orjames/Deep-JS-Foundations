@@ -1,5 +1,23 @@
 // TODO: define polyfill for `Object.is(..)`
+// if (!Object.is) {
+	Object.is = function ObjectIs(x, y) {
+    
 
+    if (x || y === )
+    
+    
+    
+    
+    // test case for anything besides NaN and -0
+    if (x === y) {
+      return true
+    } else {
+      return false
+    }
+
+
+  };
+// }
 
 
 // tests:
