@@ -2,14 +2,19 @@
 // if (!Object.is) {
 Object.is = function ObjectIs(x, y) {
   // problem is, NaN === NaN returns false
-  if (Number.isNaN(x) === Number.isNaN(y)) {
-    return true;
+  if (x !== y) {
+    console.log('thinks x !== y');
+    if (Number.isNaN(x) === Number.isNaN(y)) {
+      return true;
+    }
   }
 
   // problem is -0 === 0 is true
   if (x === y) {
-    console.log('in here');
-    console.log('signs', sign(x), sign(y));
+    console.log('signs', Math.sign(x), Math.sign(y));
+    if (Math.sign(x) !== Math.sign(y)) {
+      return false;
+    }
   }
 
   // test case for anything besides NaN and -0

@@ -92,6 +92,11 @@ trendRate === 0; //true OOPS!
 trendRate < 0; //false
 trendRate > 0; //false
 
+Math.sign(-3); //-1
+Math.sign(3); //1
+Math.sign(-0); //-0 WTF?
+Math.sign(0); // 0 WTF
+
 Object.is(trendRate, -0); //true
 Object.is(trendRate, 0); //false kindof like ==== quadruple equal, only way to test for negative 0 (-0)
 
