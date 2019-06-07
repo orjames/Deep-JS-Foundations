@@ -73,6 +73,7 @@ var myCatsAge = Number('n/a'); //NaN
 myAge - "my son's age"; //NaN coerces the string into the NaN value
 
 myCatsAge === myCatsAge; //false OOPS! NaN's are not equal to eachother, doesnt have identity property
+NaN === NaN; // false, only value in JavaScript not equal to itself
 
 isNaN(myAge); //false
 isNaN(myCatsAge); //true
