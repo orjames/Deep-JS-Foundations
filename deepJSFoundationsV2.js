@@ -102,3 +102,43 @@ Object.is(trendRate, -0); //true
 Object.is(trendRate, 0); //false kindof like ==== quadruple equal, only way to test for negative 0 (-0)
 
 // can use Object.is(myCatsAge, NaN) to check for NaN
+
+// FUNDAMENTAL OBJECTS
+// aka built-in object or Native Functions
+// bolted on Object Oriented of JavaScript
+
+// Use new for:
+// Object()
+// Array()
+// Function()
+// Date()
+// RegExp()
+// Error()
+
+// Don't use new for:
+// String()
+// Number()
+// Boolean()
+
+var yesterday = new Date('March 6, 2019');
+yesterday.toUTCString();
+// "Wed, 06 Mar 2019 06:00:00 GMT"
+
+var myGPA = String(transcript.gpa);
+// "3.54"
+
+// ABSTRACT OPERATIONS
+// perform type conversion or coercion
+// ToPrimitive(hint)
+// hint "number"
+// valueOf()
+// toString()
+// hint "string"
+// toString()
+// valueOf()
+
+// ToString
+// gives the string representation of a value in string form
+null; //"null"
+undefined; //'undefined'
+// toString
